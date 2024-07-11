@@ -1,8 +1,19 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../public/assets/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+}
+
+:root{
+  --fonte: 'Montserrat', sans-serif;
+  --cor-preto: black;
+  --cor-branco: white;
+  --cor-cinza: #e2e2e2;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--fonte);
+  background-color: var(--cor-branco);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
