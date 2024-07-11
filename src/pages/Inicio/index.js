@@ -1,5 +1,12 @@
-export default Inicio = () => {
+import Cabecalho from "components/Cabecalho";
+
+const Inicio = () => {
     return (
-        <h1>Olá início</h1>
+        <>
+            <Cabecalho />
+            <h1>Olá início</h1>
+        </>
     )
 }
+
+export default Inicio;

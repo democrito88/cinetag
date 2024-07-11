@@ -1,0 +1,17 @@
+.cabecalho{
+    padding: 1em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho nav{
+    width: 100%;
+    margin-left: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1em;
+}
