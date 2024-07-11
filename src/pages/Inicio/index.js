@@ -3,7 +3,7 @@ import Cabecalho from "components/Cabecalho";
 const Inicio = () => {
     return (
         <>
-            <Cabecalho />
+            <Cabecalho page="./" />
             <h1>Olá início</h1>
         </>
     )
