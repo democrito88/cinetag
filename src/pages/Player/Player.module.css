@@ -1,0 +1,8 @@
+.player{
+    width: 100%;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

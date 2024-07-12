@@ -1,9 +1,10 @@
 .cabecalho{
-    padding: 1em;
+    padding: 1em 5em;
     background-color: black;
     color: white;
     text-decoration: none;
     display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -12,6 +13,10 @@
     margin-left: 2em;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-end;
     gap: 1em;
+}
+
+.banner{
+    width: 100vw;
 }

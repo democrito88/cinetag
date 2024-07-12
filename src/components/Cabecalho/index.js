@@ -14,15 +14,18 @@ const Cabecalho = ({page}) => {
                     <img src={logo} alt="logo do cinetag"/>
                 </Link>
                 <nav>
-                    <CabecalhoLink url="./">
+                    <CabecalhoLink url="../">
                         Home
                     </CabecalhoLink>
-                    <CabecalhoLink url="./Favoritos">
+                    <CabecalhoLink url="../favoritos">
                         Favoritos
                     </CabecalhoLink>
                 </nav>    
             </header>
-            <img src={ page === "./" ? bannerHome : (page === "./Favoritos" ? bannerFavoritos : bannerPlayer)} alt="banner" />
+            <img 
+                src={ page === "./" ? bannerHome : (page === "./Favoritos" ? bannerFavoritos : bannerPlayer)} 
+                alt="banner"
+                className={styles.banner} />
         </>
     )
 }

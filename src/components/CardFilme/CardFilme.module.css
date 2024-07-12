@@ -1,0 +1,18 @@
+.card{
+    border: none;
+    box-shadow: 2px 2px #ccc;
+    width: max-content;
+    padding: 0;
+    
+    img{
+        width: 100%;
+    }
+}
+
+.cardBody{
+    padding: 1em;
+    background-color: #aaa;
+    img{
+        width: 1em;
+    }
+}
