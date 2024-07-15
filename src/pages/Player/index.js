@@ -1,4 +1,3 @@
-import Cabecalho from "components/Cabecalho";
 import styles from "./Player.module.css";
 import { useParams } from "react-router-dom";
 import ExibidorFilme from "components/ExibidorFilme";
@@ -12,13 +11,12 @@ const Player = () => {
     useEffect(()=>{
         fetch("/json/db.json")
         .then(resposta => resposta.json())
-        .then(filmes => setFilme(filmes.filter(filme => filme.id == id)[0]))
+        .then(filmes => setFilme(filmes.filter(filme => filme.id+"" === id)[0]))
         .catch(error => console.error(error));
-    }, []);
+    }, [id]);
 
     return(
         <>
-            <Cabecalho page="./Player" />
             <main className={styles.player}>
                 <ExibidorFilme filme={filme}/>
             </main>

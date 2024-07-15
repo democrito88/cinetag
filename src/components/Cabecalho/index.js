@@ -7,6 +7,7 @@ import bannerFavoritos from "./banner-favoritos.png";
 import bannerPlayer from "./banner-player.png";
 
 const Cabecalho = ({page}) => {
+    console.log(page);
     return(
         <>
             <header className={styles.cabecalho}>
