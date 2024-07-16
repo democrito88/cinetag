@@ -1,19 +1,22 @@
 import Inicio from "pages/Inicio";
 import Favoritos from "pages/Favoritos";
 import Player from "pages/Player";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"
-import Cabecalho from "components/Cabecalho";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Container from "components/Container";
+import FavoritosProvider from "contexts/Favoritos";
 
 const AppRoutes = () => {
-    const page = useLocation();
     return (
         <BrowserRouter>
-            <Cabecalho page={page.pathname} />
-            <Routes>
-                <Route path="/" element={<Inicio />}></Route>
-                <Route path="/favoritos" element={<Favoritos />}></Route>
-                <Route path="/player/:id" element={<Player />}></Route>
-            </Routes>
+            <Container>
+                <FavoritosProvider>
+                    <Routes>
+                        <Route path="/" element={<Inicio />}></Route>
+                        <Route path="/favoritos" element={<Favoritos />}></Route>
+                        <Route path="/player/:id" element={<Player />}></Route>
+                    </Routes>
+                </FavoritosProvider>
+            </Container>
         </BrowserRouter>
     )
 }

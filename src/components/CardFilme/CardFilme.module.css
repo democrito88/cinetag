@@ -1,17 +1,19 @@
 .card{
     border: none;
     box-shadow: 2px 2px #ccc;
-    width: max-content;
+    width: 282px;
     padding: 0;
-    
-    img{
-        width: 100%;
-    }
+}
+
+.cartaz{
+    width: 100%;
 }
 
 .cardBody{
+    margin-top: -10px;
     padding: 1em;
     background-color: #aaa;
+    max-height: 100px;
     img{
         width: 1em;
     }

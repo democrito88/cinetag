@@ -1,3 +1,4 @@
+import Cabecalho from "components/Cabecalho";
 import Filmes from "components/Filmes";
 import Titulo from "components/Titulo";
 import { useEffect, useState } from "react";
@@ -14,6 +15,7 @@ const Inicio = () => {
 
     return (
         <>
+            <Cabecalho page={"home"} />
             <Titulo>
                 <h1>Um lugar para guardar seus vídeos e filmes!</h1>
             </Titulo>

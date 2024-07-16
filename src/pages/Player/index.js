@@ -2,6 +2,7 @@ import styles from "./Player.module.css";
 import { useParams } from "react-router-dom";
 import ExibidorFilme from "components/ExibidorFilme";
 import { useEffect, useState } from "react";
+import Cabecalho from "components/Cabecalho";
 
 const Player = () => {
     let { id } = useParams();
@@ -17,6 +18,7 @@ const Player = () => {
 
     return(
         <>
+            <Cabecalho page={"player"} />
             <main className={styles.player}>
                 <ExibidorFilme filme={filme}/>
             </main>
