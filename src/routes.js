@@ -1,3 +1,4 @@
+import React from "react";
 import Inicio from "pages/Inicio";
 import Favoritos from "pages/Favoritos";
 import Player from "pages/Player";

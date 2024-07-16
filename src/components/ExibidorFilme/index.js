@@ -1,3 +1,6 @@
+import React from "react";
+import styles from "./ExibidorFilme.module.css";
+
 const ExibidorFilme = ({ filme }) => {
 
     return (
@@ -12,7 +15,7 @@ const ExibidorFilme = ({ filme }) => {
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen>
             </iframe>
-            <h2>{filme.titulo}</h2>
+            <h2 className={styles.tituloFilme}>{filme.titulo}</h2>
         </>
     );
 }

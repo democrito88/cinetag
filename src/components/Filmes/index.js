@@ -1,4 +1,5 @@
 import CardFilme from "components/CardFilme";
+import React from "react";
 import styles from "./Filmes.module.css";
 
 const Filmes = ({filmes}) => {

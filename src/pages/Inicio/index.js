@@ -1,3 +1,4 @@
+import React from "react";
 import Cabecalho from "components/Cabecalho";
 import Filmes from "components/Filmes";
 import Titulo from "components/Titulo";
