@@ -9,7 +9,7 @@ const ExibidorFilme = ({ filme }) => {
                 width="560"
                 height="315"
                 src={filme.link}
-                title="YouTube video player"
+                title={filme.titulo}
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"

@@ -2,10 +2,14 @@ import CardFilme from "components/CardFilme";
 import React from "react";
 import styles from "./Filmes.module.css";
 
-const Filmes = ({filmes}) => {
-    return(
+const Filmes = ({ filmes }) => {
+    return (
         <section className={styles.filmes}>
-            {filmes.map(filme => <CardFilme key={filme.id} filme={filme} />)}
+            {
+                filmes.length > 0 ?
+                    filmes.map(filme => <CardFilme key={filme.id} filme={filme} />)
+                    : <p>Nenhum filme encontrado!</p>
+            }
         </section>
     );
 }
